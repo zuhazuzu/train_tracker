@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Train tracker website using React and JavaScript
+
+  
+
+I started this project by reviewing given assignment:
+
+   1.  Check the documentation of the Digitraffic API
+
+        - *Here i can find neccesary train information which i can use in my program*
+
+   2.  Create yourself a public repository in GitHub and start your project
+
+        - *train_tracker is good descritption to this project*
+
+   3.  Choose the programming languages and technologies you feel best to fit for this project. * Remember to hide your API key from your public GitHub repository
+
+        - *In Avanced web-development course  i had recently used JavaScript and React, so these were my choises*
+
+   4.  Develop the functionalities mentioned above to your program.
+
+        - *I gave Copilot prompt: Create website which uses API from DigiTraffic. it should show train locations in map UI. Also it would be nice if it would update train locations automaticly and giving train information to user.*
+
+        - *Copilot gave decent singlepage .html code which had neccesary components, but i found it to be too simple. So i asked Copilot to transform it in to react.*
+
+        - *From here i started adding functionalities: 
+
+            *4.1. Add search bar in header so user can use train number to narrow amount of trains shown in map. resize header to be more user friendly. 
+
+            *4.2. Added train numbers to be shown all the time in map. user does not have to guess them when looking at map.
+
+            *4.3. I did not have API key, but i stii decided to hide API-url which i used in this program. API-url is in .env file which is set in .gitignore file.
+
+            *4.4 Program crashed when there was no connection to API, so i made error handling which shows "odotetaan yhteyttä..." when connection is not available.
+            
+            *4.5 Lastly i added some comments in code and rewiew to it.
+
+   5.  Create a README.md file for documentation to your GitHub repository.
+	   -  *When installed React components i had some instructions to React. I decided to leave most relevant parts end of this document. I decided to make honest documentation how i created this project and what kind o decisions led to this kind of results.*
+
+   6.  Return the task by following the instructions below.
+	   *Hope you like this.*
+
+  
+  
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+  
 
-In the project directory, you can run:
+Runs the app in the development mode.\ 'npm start'
 
-### `npm start`
-
-Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
+
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

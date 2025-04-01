@@ -16,7 +16,7 @@ const MapComponent = ({ searchTerm }) => {
             setLoading(true); // Näytetään latausilmoitus
             setError(false); // Nollataan virhetila ennen uuden haun aloittamista
             try {
-                const response = await fetch(process.env.REACT_APP_API_URL);
+                const response = await fetch(process.env.REACT_APP_API_URL); // Hakee junien sijainnit API:sta, joka on piilotettu .env tiedostoon.
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
